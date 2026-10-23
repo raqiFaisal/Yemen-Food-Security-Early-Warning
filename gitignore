@@ -1,0 +1,18 @@
+# Local data (review sharing permissions before publishing)
+YEM_JMR_data.csv
+*.zip
+
+# Notebook/runtime outputs and model artifacts
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+*.pkl
+*.joblib
+/kaggle/working/
+/outputs/
+run_metadata.json
+model_comparison_validation.csv
+threshold_selection_validation.csv
+final_test_metrics.csv
+test_predictions.csv
+feature_importance_validation.csv
