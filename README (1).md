@@ -1,28 +1,46 @@
-# Yemen Food Security Early Warning
+# Yemen Food Security Early Warning System
 
-A leakage-aware, time-ordered machine-learning benchmark for the `target_ipc4` label in `YEM_JMR_data.csv`.
+## Project Overview
+This project focuses on exploring food security data in Yemen and preparing it for analysis to support early warning and monitoring of food security conditions.
 
-## Files
-- `Yemen_Food_Security_Early_Warning_FINAL.ipynb`: main notebook.
-- `requirements.txt`: Python dependencies.
-- `.gitignore`: excludes generated models, outputs, and sensitive/local data.
-- Runtime-generated outputs: `model_comparison_validation.csv`, `threshold_selection_validation.csv`, `final_test_metrics.csv`, `test_predictions.csv`, `feature_importance_validation.csv`, and `run_metadata.json`.
+The project uses a Jupyter Notebook to inspect the dataset, process the available information, and explore patterns over time.
 
-## Run on Kaggle
-1. Create a Kaggle Notebook.
-2. Use **Add Input** to attach the dataset containing `YEM_JMR_data.csv`.
-3. Upload/import this notebook and run all cells.
-4. Outputs are written to `/kaggle/working/`; download them from the notebook's Output panel.
+## Objectives
+- Explore food security data related to Yemen.
+- Clean and prepare the data for analysis.
+- Analyze monthly and temporal patterns in the dataset.
+- Support data-driven understanding of food security conditions.
+- Provide a foundation for future early warning analysis.
 
-## Run locally
-Place `YEM_JMR_data.csv` beside the notebook and install dependencies:
-```bash
-python -m pip install -r requirements.txt
-jupyter notebook Yemen_Food_Security_Early_Warning_FINAL.ipynb
-```
+## Dataset
+The project uses the dataset `YEM_JMR_data.csv`.
 
-## Scientific caution
-The dataset has labels for only a subset of rows/months and does not provide explicit feature publication timestamps or an unambiguous forecast horizon. The notebook therefore evaluates a chronological retrospective classification task. It does **not** claim a validated operational early-warning system. `predicted_prob`, IPC-adjacent target fields, and `estimated_pop_at_risk` are excluded from model features. Several price/exchange “original” and “volatility_original” columns are exact duplicates; redundant copies are removed.
+The dataset includes a `year_month` field representing year and month values, formatted as `YYYY_MM` (for example, `2026_09`).
 
-## GitHub
-Do not commit confidential or restricted raw data. Commit the notebook, documentation, and dependency files; add generated outputs only if appropriate and documented. Review the data provider's license and sharing rules before publishing.
+**Note:** Please ensure that any data shared publicly is appropriate for public release and does not contain confidential or sensitive information.
+
+## Project Files
+- `Yemen_Food_Security_Early_Warning_FINAL (2).ipynb` — Jupyter Notebook containing the project analysis and workflow.
+- `YEM_JMR_data.csv` — Dataset used by the notebook, if included in the repository.
+
+## Tools and Technologies
+- Python
+- Jupyter Notebook
+- Pandas
+- Data analysis and visualization tools
+
+## How to Use
+1. Download or clone this repository.
+2. Make sure the required dataset is available in the expected location.
+3. Open the Jupyter Notebook.
+4. Run the notebook cells in order.
+5. Review the outputs and analysis.
+
+## Project Status
+This project is under development. Further data validation, analysis, and model evaluation may be added as the workflow evolves.
+
+## Disclaimer
+This project is intended for data analysis and research purposes. Its outputs should not be treated as official forecasts or decisions without appropriate validation and expert review.
+
+## Author
+Project contributor
